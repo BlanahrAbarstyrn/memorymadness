@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://ckib54bkvvdl8"]
 
-[ext_resource type="PackedScene" uid="uid://72jcmo2cn2tb" path="res://Scenes/TileHolder.tscn" id="1_7lihs"]
 [ext_resource type="LabelSettings" uid="uid://dwvbwhm3x5ygb" path="res://Resources/level_button_text.tres" id="1_b2bpf"]
+[ext_resource type="PackedScene" uid="uid://cjb5d8qoo2jpu" path="res://Scenes/MemoryTile.tscn" id="1_fgofq"]
 [ext_resource type="FontFile" uid="uid://balt1kyekjgl1" path="res://assets/fonts/LuckiestGuy-Regular.ttf" id="1_iukft"]
 [ext_resource type="Texture2D" uid="uid://bd8s0mkka3fti" path="res://assets/ui/blue_button00.png" id="2_kldst"]
 [ext_resource type="Texture2D" uid="uid://gg4kbjxnowp0" path="res://assets/ui/green_button00.png" id="3_b2bpf"]
@@ -45,130 +45,13 @@ theme_override_constants/h_separation = 20
 theme_override_constants/v_separation = 20
 columns = 6
 
-[node name="TileHolder" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+[node name="MemoryTile" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_fgofq")]
 layout_mode = 2
 
-[node name="TileHolder2" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+[node name="MemoryTile2" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_fgofq")]
 layout_mode = 2
 
-[node name="TileHolder3" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder4" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder5" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder6" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder7" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder8" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder9" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder10" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder11" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder12" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder13" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder14" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder15" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder16" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder17" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder18" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder19" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder20" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder21" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder22" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder23" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder24" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder25" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder26" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder27" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder28" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder29" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder30" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder31" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder32" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder33" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder34" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder35" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder36" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder37" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder38" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder39" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder40" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder41" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
-layout_mode = 2
-
-[node name="TileHolder42" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+[node name="MemoryTile3" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_fgofq")]
 layout_mode = 2
 
 [node name="ScoreMC" type="MarginContainer" parent="HBFullScreen"]

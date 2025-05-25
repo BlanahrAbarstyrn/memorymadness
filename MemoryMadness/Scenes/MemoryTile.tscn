@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://cjb5d8qoo2jpu"]
+
+[ext_resource type="Texture2D" uid="uid://drmd3ghuh1s1n" path="res://assets/frames/hidden_frame_blank.png" id="1_2tf8a"]
+[ext_resource type="Texture2D" uid="uid://dx0hnxed51rgy" path="res://assets/frames/green_frame.png" id="2_kv40y"]
+[ext_resource type="Script" uid="uid://82xjhowqplkj" path="res://Scenes/Scripts/MemoryTile.gd" id="2_ytod6"]
+[ext_resource type="Texture2D" uid="uid://bh8b4pin4c2n0" path="res://assets/glitch/blockmaker.png" id="3_ytod6"]
+
+[node name="MemoryTile" type="TextureButton"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -42.0
+offset_top = -42.0
+offset_right = 42.0
+offset_bottom = 42.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(42, 42)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_2tf8a")
+script = ExtResource("2_ytod6")
+
+[node name="FrameImage" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_kv40y")
+
+[node name="ItemImage" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -32.0
+offset_right = 32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_ytod6")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
