@@ -1,0 +1,250 @@
+[gd_scene load_steps=10 format=3 uid="uid://ckib54bkvvdl8"]
+
+[ext_resource type="PackedScene" uid="uid://72jcmo2cn2tb" path="res://Scenes/TileHolder.tscn" id="1_7lihs"]
+[ext_resource type="LabelSettings" uid="uid://dwvbwhm3x5ygb" path="res://Resources/level_button_text.tres" id="1_b2bpf"]
+[ext_resource type="FontFile" uid="uid://balt1kyekjgl1" path="res://assets/fonts/LuckiestGuy-Regular.ttf" id="1_iukft"]
+[ext_resource type="Texture2D" uid="uid://bd8s0mkka3fti" path="res://assets/ui/blue_button00.png" id="2_kldst"]
+[ext_resource type="Texture2D" uid="uid://gg4kbjxnowp0" path="res://assets/ui/green_button00.png" id="3_b2bpf"]
+[ext_resource type="Texture2D" uid="uid://lhgyeqll13a2" path="res://assets/ui/grey_button00.png" id="4_7lihs"]
+[ext_resource type="Script" uid="uid://dcjssbpge8lp7" path="res://Scenes/Scripts/ExitTb.gd" id="7_fgofq"]
+
+[sub_resource type="Theme" id="Theme_gl6un"]
+default_base_scale = 1.0
+default_font = ExtResource("1_iukft")
+default_font_size = 12
+
+[sub_resource type="LabelSettings" id="LabelSettings_7lihs"]
+font = ExtResource("1_iukft")
+font_size = 32
+font_color = Color(0.662745, 0.0941176, 0.141176, 1)
+
+[node name="Game" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1024.0
+offset_bottom = 768.0
+
+[node name="HBFullScreen" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridMC" type="MarginContainer" parent="HBFullScreen"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="HBFullScreen/GridMC"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 6
+
+[node name="TileHolder" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder2" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder3" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder4" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder5" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder6" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder7" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder8" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder9" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder10" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder11" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder12" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder13" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder14" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder15" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder16" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder17" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder18" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder19" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder20" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder21" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder22" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder23" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder24" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder25" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder26" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder27" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder28" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder29" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder30" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder31" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder32" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder33" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder34" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder35" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder36" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder37" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder38" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder39" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder40" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder41" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="TileHolder42" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_7lihs")]
+layout_mode = 2
+
+[node name="ScoreMC" type="MarginContainer" parent="HBFullScreen"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_right = 40
+
+[node name="ScoreVB" type="VBoxContainer" parent="HBFullScreen/ScoreMC"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+theme_override_constants/separation = 20
+
+[node name="MovesHB" type="HBoxContainer" parent="HBFullScreen/ScoreMC/ScoreVB"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 15
+
+[node name="Moves" type="Label" parent="HBFullScreen/ScoreMC/ScoreVB/MovesHB"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "MOVES"
+label_settings = ExtResource("1_b2bpf")
+vertical_alignment = 1
+
+[node name="MovesQty" type="Label" parent="HBFullScreen/ScoreMC/ScoreVB/MovesHB"]
+layout_mode = 2
+text = "00"
+label_settings = ExtResource("1_b2bpf")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="PairsHB" type="HBoxContainer" parent="HBFullScreen/ScoreMC/ScoreVB"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 15
+
+[node name="Pairs" type="Label" parent="HBFullScreen/ScoreMC/ScoreVB/PairsHB"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "PAIRS"
+label_settings = ExtResource("1_b2bpf")
+vertical_alignment = 1
+
+[node name="ParisQty" type="Label" parent="HBFullScreen/ScoreMC/ScoreVB/PairsHB"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "21/21"
+label_settings = ExtResource("1_b2bpf")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Spacer" type="Control" parent="HBFullScreen/ScoreMC/ScoreVB"]
+layout_mode = 2
+
+[node name="ExitTB" type="TextureButton" parent="HBFullScreen/ScoreMC/ScoreVB"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = SubResource("Theme_gl6un")
+texture_normal = ExtResource("2_kldst")
+texture_pressed = ExtResource("3_b2bpf")
+texture_hover = ExtResource("4_7lihs")
+script = ExtResource("7_fgofq")
+
+[node name="Exit" type="Label" parent="HBFullScreen/ScoreMC/ScoreVB/ExitTB"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "EXIT"
+label_settings = SubResource("LabelSettings_7lihs")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="HBFullScreen/ScoreMC/ScoreVB/ExitTB" to="HBFullScreen/ScoreMC/ScoreVB/ExitTB" method="_on_exit_button_pressed"]

@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://db7f1avghcsv1"]
+
+[ext_resource type="Texture2D" uid="uid://btjhypoq1gcht" path="res://assets/glitch/bag_moving_box.png" id="1_blmic"]
+[ext_resource type="Script" uid="uid://bods1dmjeem12" path="res://Scenes/Scripts/FrontSprite.gd" id="2_vokic"]
+
+[node name="FrontSprite" type="TextureRect"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(32, 32)
+texture = ExtResource("1_blmic")
+script = ExtResource("2_vokic")
