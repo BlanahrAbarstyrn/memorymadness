@@ -9,7 +9,7 @@ const LEVELS_DATA: LevelsDataResource = preload("res://Resources/levels_data.tre
 static func get_level_setting(level: int) -> LevelSettingResource:
 	return LEVELS_DATA.get_level_data(level)
 
-static func get_level_selection(level_num: int) -> void:
+static func get_level_selection(level_num: int) -> LevelDataSelector:
 	var l_setting: LevelSettingResource = get_level_setting(level_num)
 	
 	if l_setting == null:

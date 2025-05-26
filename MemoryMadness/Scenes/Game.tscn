@@ -1,28 +1,18 @@
-[gd_scene load_steps=10 format=3 uid="uid://ckib54bkvvdl8"]
+[gd_scene load_steps=7 format=3 uid="uid://ckib54bkvvdl8"]
 
 [ext_resource type="LabelSettings" uid="uid://dwvbwhm3x5ygb" path="res://Resources/level_button_text.tres" id="1_b2bpf"]
-[ext_resource type="PackedScene" uid="uid://cjb5d8qoo2jpu" path="res://Scenes/MemoryTile.tscn" id="1_fgofq"]
+[ext_resource type="Script" uid="uid://c13ykpk1y4njp" path="res://Scenes/Scripts/Game.gd" id="1_gl6un"]
 [ext_resource type="FontFile" uid="uid://balt1kyekjgl1" path="res://assets/fonts/LuckiestGuy-Regular.ttf" id="1_iukft"]
 [ext_resource type="Texture2D" uid="uid://bd8s0mkka3fti" path="res://assets/ui/blue_button00.png" id="2_kldst"]
 [ext_resource type="Texture2D" uid="uid://gg4kbjxnowp0" path="res://assets/ui/green_button00.png" id="3_b2bpf"]
 [ext_resource type="Texture2D" uid="uid://lhgyeqll13a2" path="res://assets/ui/grey_button00.png" id="4_7lihs"]
-[ext_resource type="Script" uid="uid://dcjssbpge8lp7" path="res://Scenes/Scripts/ExitTb.gd" id="7_fgofq"]
-
-[sub_resource type="Theme" id="Theme_gl6un"]
-default_base_scale = 1.0
-default_font = ExtResource("1_iukft")
-default_font_size = 12
-
-[sub_resource type="LabelSettings" id="LabelSettings_7lihs"]
-font = ExtResource("1_iukft")
-font_size = 32
-font_color = Color(0.662745, 0.0941176, 0.141176, 1)
 
 [node name="Game" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1024.0
 offset_bottom = 768.0
+script = ExtResource("1_gl6un")
 
 [node name="HBFullScreen" type="HBoxContainer" parent="."]
 layout_mode = 1
@@ -32,27 +22,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="GridMC" type="MarginContainer" parent="HBFullScreen"]
+[node name="TileGrid" type="GridContainer" parent="HBFullScreen"]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="GridContainer" type="GridContainer" parent="HBFullScreen/GridMC"]
-layout_mode = 2
-size_flags_horizontal = 4
+size_flags_horizontal = 6
 size_flags_vertical = 4
-theme_override_constants/h_separation = 20
-theme_override_constants/v_separation = 20
+theme_override_constants/h_separation = 4
+theme_override_constants/v_separation = 4
 columns = 6
-
-[node name="MemoryTile" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_fgofq")]
-layout_mode = 2
-
-[node name="MemoryTile2" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_fgofq")]
-layout_mode = 2
-
-[node name="MemoryTile3" parent="HBFullScreen/GridMC/GridContainer" instance=ExtResource("1_fgofq")]
-layout_mode = 2
 
 [node name="ScoreMC" type="MarginContainer" parent="HBFullScreen"]
 layout_mode = 2
@@ -109,25 +85,32 @@ vertical_alignment = 1
 [node name="Spacer" type="Control" parent="HBFullScreen/ScoreMC/ScoreVB"]
 layout_mode = 2
 
-[node name="ExitTB" type="TextureButton" parent="HBFullScreen/ScoreMC/ScoreVB"]
+[node name="ExitButton" type="TextureButton" parent="HBFullScreen/ScoreMC/ScoreVB"]
 layout_mode = 2
 size_flags_horizontal = 4
-theme = SubResource("Theme_gl6un")
 texture_normal = ExtResource("2_kldst")
 texture_pressed = ExtResource("3_b2bpf")
 texture_hover = ExtResource("4_7lihs")
-script = ExtResource("7_fgofq")
 
-[node name="Exit" type="Label" parent="HBFullScreen/ScoreMC/ScoreVB/ExitTB"]
+[node name="Label" type="Label" parent="HBFullScreen/ScoreMC/ScoreVB/ExitButton"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(0.372549, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.941176, 0.988235, 0.941176, 1)
+theme_override_colors/font_outline_color = Color(0.858824, 0.968627, 0.556863, 0.733333)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 2
+theme_override_constants/shadow_outline_size = 3
+theme_override_fonts/font = ExtResource("1_iukft")
+theme_override_font_sizes/font_size = 32
 text = "EXIT"
-label_settings = SubResource("LabelSettings_7lihs")
 horizontal_alignment = 1
 vertical_alignment = 1
+uppercase = true
 
-[connection signal="pressed" from="HBFullScreen/ScoreMC/ScoreVB/ExitTB" to="HBFullScreen/ScoreMC/ScoreVB/ExitTB" method="_on_exit_button_pressed"]
+[connection signal="pressed" from="HBFullScreen/ScoreMC/ScoreVB/ExitButton" to="." method="_on_exit_button_pressed"]
