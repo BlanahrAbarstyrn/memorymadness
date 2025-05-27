@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3djqdhx5eyb2"]
+
+[ext_resource type="Script" uid="uid://qq6rt7htm7xb" path="res://Scenes/Scripts/Scorer.gd" id="1_qbqup"]
+
+[node name="Scorer" type="Node"]
+script = ExtResource("1_qbqup")
+
+[node name="Sound" type="AudioStreamPlayer" parent="."]
