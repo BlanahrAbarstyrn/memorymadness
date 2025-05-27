@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://8uocvkg8jyvq"]
+[gd_scene load_steps=5 format=3 uid="uid://8uocvkg8jyvq"]
 
 [ext_resource type="Texture2D" uid="uid://rxstwffxw2l5" path="res://assets/images/backgroundEmpty.png" id="1_l10r5"]
 [ext_resource type="Script" uid="uid://l2vtm7lfvace" path="res://Scenes/Scripts/Master.gd" id="1_q4e6u"]
 [ext_resource type="PackedScene" uid="uid://duomxdsk3yxv5" path="res://Scenes/Main.tscn" id="3_g2vfr"]
 [ext_resource type="PackedScene" uid="uid://ckib54bkvvdl8" path="res://Scenes/Game.tscn" id="4_388ua"]
-[ext_resource type="Script" uid="uid://c13ykpk1y4njp" path="res://Scenes/Scripts/Game.gd" id="5_0mily"]
 
 [node name="Master" type="Control"]
 layout_mode = 3
@@ -24,4 +23,3 @@ expand_mode = 1
 
 [node name="Game" parent="." instance=ExtResource("4_388ua")]
 visible = false
-script = ExtResource("5_0mily")
