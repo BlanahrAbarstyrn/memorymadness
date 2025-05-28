@@ -116,4 +116,6 @@ uppercase = true
 
 [node name="Scorer" parent="." instance=ExtResource("7_fgofq")]
 
+[node name="Sound" type="AudioStreamPlayer" parent="."]
+
 [connection signal="pressed" from="HBFullScreen/ScoreMC/ScoreVB/ExitButton" to="." method="_on_exit_button_pressed"]
