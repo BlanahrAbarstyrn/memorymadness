@@ -1,0 +1,83 @@
+[gd_scene load_steps=6 format=3 uid="uid://cpf81x08a2jh0"]
+
+[ext_resource type="Script" uid="uid://b2tu846uv00ja" path="res://Scenes/Scripts/GameOverUi.gd" id="1_rak6f"]
+[ext_resource type="Texture2D" uid="uid://br5p03d1m70kk" path="res://assets/ui/UIbg.png" id="1_sef4c"]
+[ext_resource type="FontFile" uid="uid://balt1kyekjgl1" path="res://assets/fonts/LuckiestGuy-Regular.ttf" id="2_rfgd4"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_rak6f"]
+font = ExtResource("2_rfgd4")
+font_size = 95
+font_color = Color(0.0901961, 0.137255, 0.278431, 1)
+outline_size = 13
+shadow_size = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_rfgd4"]
+font = ExtResource("2_rfgd4")
+font_size = 48
+font_color = Color(0.490196, 0.137255, 0.105882, 1)
+outline_size = 4
+shadow_size = 0
+
+[node name="GameOverUI" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_rak6f")
+
+[node name="NPR" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.0
+offset_top = -180.0
+offset_right = 256.0
+offset_bottom = 180.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_sef4c")
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="VB" type="VBoxContainer" parent="NPR"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="WIN" type="Label" parent="NPR/VB"]
+layout_mode = 2
+text = "YOU WIN!"
+label_settings = SubResource("LabelSettings_rak6f")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="Moves" type="Label" parent="NPR/VB"]
+layout_mode = 2
+text = "adfdsfdsfdsfdsfsdf"
+label_settings = SubResource("LabelSettings_rfgd4")
+horizontal_alignment = 1
+vertical_alignment = 1
